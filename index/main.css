@@ -1,0 +1,177 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.nanumgothic * {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-width: 1280px;
+    height: 5vh;
+    background-color: white;
+}
+
+.main {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    /*가운데 위치하게*/
+    width: 100%;
+    min-width: 1280px;
+    min-height: 90vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.footer {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-width: 1280px;
+    height: 5vh;
+    background-color: black;
+}
+
+.nav {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 1280px;
+    min-width: 1280px;
+    height: 100%;
+    background-color: white;
+}
+
+.header .nav .menu1 {
+    position: relative;
+    float: left;
+    /*왼쪽 기준으로 정렬*/
+    top: 10px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.header .nav .menu2 {
+    position: relative;
+    float: left;
+    top: 10px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.header .nav .menu3 {
+    position: relative;
+    float: left;
+    top: 10px;
+    width: 160px;
+    cursor: pointer;
+
+}
+/* .header .nav .menu3:hover
+{
+color: blue;
+}
+.header .nav .menu3:active{
+    color: red;
+} */
+
+.header .nav .menu4 {
+    position: relative;
+    float: left;
+    top: 10px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.header .nav .menu5 {
+    position: relative;
+    float: left;
+    top: 10px;
+    width: 160px;
+    cursor: pointer;
+}
+
+.main .section1 {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 1280px;
+    height: 600px;
+    padding-top: 50px;
+    /*위쪽 내부 여백*/
+    /*border: 1px solid 선 형태
+        black;
+        테두리 그릴 때 사용*/
+}
+
+.main .section1 .img1 {
+    width: 1280px;
+    height: 600px;
+}
+
+.main .section2 {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 1280px;
+    height: 500px;
+    padding-top: 50px;
+}
+
+.main .section2 .text1 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    font-size: 16pt;
+    font-family: 'Nanum Gothic', sans-serif;
+    /*글꼴*/
+    font-weight: 700;
+    /*굵기*/
+    text-align: left;
+    /*글 정렬*/
+    width: 500px;
+}
+
+.main .section2 .img2 {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url(img/img_0282.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .section2 .text2 {
+    position: absolute;
+    top: 160px;
+    left: 400px;
+    width: 600px;
+    height: 400px;
+}
+
+.main .section3 {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 1280px;
+    height: 200px;
+    padding-top: 50px;
+}
+
+.main .section4 {
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    width: 1280px;
+    height: 400px;
+    padding-top: 50px;
+    border: 1px solid black;
+}

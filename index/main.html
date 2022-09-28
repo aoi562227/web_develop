@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <style>
+        .notice{
+            visibility: hidden;
+        }
+        .notice_background{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            z-index: 2; /* 우선순위 */
+            opacity: 0.2; /* 불투명도 0~1 */
+        }
+        .notice_border{
+            position: relative;
+            margin: 0 auto;
+            top: 22vh;
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!--인라인 스타일요소 > 내부 스타일시트 > 외부 스타일시트-->
+    <header class="header">
+        <nav class="nav">
+            <div class="menu1">회사 이름</div>
+            <a href="index2.html" style="color: black;"><div class="menu2">메인 페이지</div></a>
+            <div class="menu3">회사 역사</div>
+            <div class="menu4">예약 현황</div>
+            <div class="menu5">Q&A</div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="notice">
+            <div class="notice_background"></div>
+            <div style="position:absolute;">
+                <div class="notice_border">공지사항</div>
+            </div>
+        </section>
+        <section class="section1">
+            <img src="img/img_0282.png" class="img1" alt="" />
+        </section>
+        <section class="section2">
+            <div class="text1">레스토랑</div>
+            <div class="img2"></div>
+            <div class="text2">
+                <div style="font-size: 14pt; font-weight: 700">
+                    올해의 주방장 Mr.JIM
+                </div>
+                <div>안녕하세요! XXX레스토랑의 주방장입니다.</div>
+                <div>
+                    올해의 주방장에 선정되어 기쁩니다.<br />저희 레스토랑을 이용해주셔서 감사합니다.
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <form action="main2.html">
+                <div><label>이름</label> <input type="text" /></div>
+                <div><label>휴대폰번호</label><input type="text" /></div>
+                <div><label>인증번호</label><input type="text" /></div>
+                <br />
+                <input type="submit" value="레스토랑 예약" />
+            </form>
+        </section>
+        <section class="section4">
+            <table>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+                <tr>
+                    <td>12번째</td>
+                    <td>제목</td>
+                </tr>
+            </table>
+
+            <div><div style="float:left;">제목1</div><div>내용</div></div>
+            <div><div style="float:left;">제목1</div><div>내용</div></div>
+            <div><div style="float:left;">제목1</div><div>내용</div></div>
+        </section>
+        <section></section>
+    </main>
+    <footer class="footer"></footer>
+</body>
+
+</html>
