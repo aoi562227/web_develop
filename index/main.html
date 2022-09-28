@@ -8,20 +8,24 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <style>
-        .notice{
+        .notice {
             visibility: hidden;
         }
-        .notice_background{
+        
+        .notice_background {
             position: fixed;
             top: 0px;
             left: 0px;
             width: 100%;
             height: 100vh;
             background-color: black;
-            z-index: 2; /* 우선순위 */
-            opacity: 0.2; /* 불투명도 0~1 */
+            z-index: 2;
+            /* 우선순위 */
+            opacity: 0.2;
+            /* 불투명도 0~1 */
         }
-        .notice_border{
+        
+        .notice_border {
             position: relative;
             margin: 0 auto;
             top: 22vh;
@@ -29,6 +33,41 @@
             height: 500px;
             background-color: white;
             z-index: 3;
+        }
+        
+        @media all and (max-width: 1280px) {
+            .header .nav .menu2 {
+                display: none;
+            }
+            .header .nav .menu3 {
+                display: none;
+            }
+            .header .nav .menu4 {
+                display: none;
+            }
+            .header .nav .menu5 {
+                display: none;
+            }
+        }
+        
+        @media all and(min-width: 1280px) {}
+        
+        .main .section1 .img1 {
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+        }
+        
+        @keyframes myanimation {
+            from {
+                margin-left: 0px;
+            }
+            50% {
+                margin-left: 200px;
+            }
+            to {
+                margin-left: 0px;
+            }
         }
     </style>
 </head>
@@ -38,7 +77,9 @@
     <header class="header">
         <nav class="nav">
             <div class="menu1">회사 이름</div>
-            <a href="index2.html" style="color: black;"><div class="menu2">메인 페이지</div></a>
+            <a href="index2.html" style="color: black">
+                <div class="menu2">메인 페이지</div>
+            </a>
             <div class="menu3">회사 역사</div>
             <div class="menu4">예약 현황</div>
             <div class="menu5">Q&A</div>
@@ -47,7 +88,7 @@
     <main class="main">
         <section class="notice">
             <div class="notice_background"></div>
-            <div style="position:absolute;">
+            <div style="position: absolute">
                 <div class="notice_border">공지사항</div>
             </div>
         </section>
@@ -96,9 +137,18 @@
                 </tr>
             </table>
 
-            <div><div style="float:left;">제목1</div><div>내용</div></div>
-            <div><div style="float:left;">제목1</div><div>내용</div></div>
-            <div><div style="float:left;">제목1</div><div>내용</div></div>
+            <div>
+                <div style="float: left">제목1</div>
+                <div>내용</div>
+            </div>
+            <div>
+                <div style="float: left">제목1</div>
+                <div>내용</div>
+            </div>
+            <div>
+                <div style="float: left">제목1</div>
+                <div>내용</div>
+            </div>
         </section>
         <section></section>
     </main>
